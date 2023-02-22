@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>yourname.</title>
+    <title>Nassim Rhaiem.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -16,7 +16,7 @@
         <div id="spinner"></div>
     </div>
     <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
-    <div id="title">yourname.</div><br>
+    <div id="title">Nassim Rhaiem.</div><br>
     <div id="links">
         <a href="#skills">skills</a>
         <a href="#work" style="margin:0px 60px;">works</a>
@@ -27,13 +27,22 @@
     <center>
     <div id="middle">
         <div id="tagline" class="animated zoomIn" style="animation-delay:1.8s;">
-            if you're reading this, that mean's you can read<br>
-            <button class="btn_one">haha ok</button>
+            A documented journey of becoming a software developer<br>
+            <button class="btn_one">Show More <a href="#AboutMe"></a></button>
+                
         </div>
     </div>
     </center>
 
     <div id="portfolio">
+            <div id="AboutMe">
+                <h1>About Me</h1>   
+                <div>
+                    <p>
+                        Hi! I'm Nassim, a graduate in computer science at Coventry University, I value creativity and innovation and strive to apply these to anything I do. I'm a very positive person who takes work as an opportunity to share a passion that originated from gaming. Whether it's working independently or with a group; I always do my best and learn from my peers to improve myself with preparations for any task at hand; and to one day, be able to work using such skills as a professional developer. My interest in software development began during my time at university where I was exposed to a wide range of languages and technologies, including C#, Java, JavaScript, and Python. I was particularly drawn to the problem-solving aspect of computer science and the ability to create something out of nothing.
+                    </p>
+                </div> 
+            </div>
              <div id="skills">
                  <h1>skills.</h1>   
                  <div>
@@ -47,18 +56,36 @@
                  <h1>works.</h1>
 
                  <div class="project">
-                 <h2>project title 1</h2>
-                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate.</div>
+                 <h2>Investigating the impact of latency in NFC relay attacks using Arduino's</h2>
+                 <div>
+                    <p>
+                        A relay attack was emulated using three Arduino UNO's: Imagine a scenario where you had your bank card at the back of your phone and in this scenario, your phone was infected with a virus that could read the card since it is in close proximity, the hacker could utilise that virus to act as a mole to relay the NFC interaction between a reader and the card itself. one Arduino would act as a reader, where two other Arduino's would act as a mole that reads an NFC card with information on it and a proxy that sends the request to the mole, recieves the response and sends it to the reader. The Arduino's communicated using Serial.py and were all connected to a laptop and the reader would recieve the connection, verify the information and return the time taken to finish this process. This time was compared with a legitimate interaction between the nfc card and the reader and it was discovered that there was a consistent, significant (as defined as over 500ms) increase in latency when a relay attack is attempted, with an increase in latency of at least 1022ms.
+                    </p>
+                </div>
                  <button class="btn_one">visit project</button>
                 </div>
 
                 <div class="project">
-                 <h2>project title 2</h2>
-                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate.
+                 <h2>Ruby's Adventure</h2>
+                 <div>
+                    <p>
+                        Ruby's Adventure was my first experience using a game engine: Unity. Ruby's adventure is a Unity-provided tutorial on how to begin to design a small 2D game using sprites, animations and Object Oriented Programming with C#. I took this one step further, assigning different variations of NPCs, taking advantage of Unity's prefab system to create variations of enemies and characters that can do unique things such as changing dialogue when conditions are met and chaning movement patterns. Ruby must fix all of the robots in her village but perhaps someone else is pulling the strings The game is available to play on Github and is the first major project I had taken outside of university.
+                    </p>
                  </div>
                  <button class="btn_one">visit project</button>
                  <button class="btn_two">code</button>
                 </div>
+
+                <div class="project">
+                    <h2>Pace Maker: The Fitness App</h2>
+                    <div>
+                       <p>
+                            Designing a fitness app from the ground up, utilising cloud computing to enhance the user experience with the Firebase API to store user login information securely. This app also uses mobile sensors such as the accelerometer to detect and count footsteps, to approximate burned calories for the sole purpose of aiding a healthier lifestyle in a clear, accessible interface, such features include using the MVVM model, Inversion of Control and tabbed pages for the UI.
+                        </p>
+                    </div>
+                    <button class="btn_one">visit project</button>
+                    <button class="btn_two">code</button>
+                   </div>
 
              </div>
          
@@ -74,7 +101,6 @@
                     <a class="btn_social"><i class="fas fa-phone"></i></a>
                     <a class="btn_social"><i class="fas fa-at"></i></a>
                     <a class="btn_social"><i class="fab fa-twitter"></i></a>
-                    <a class="btn_social"><i class="fab fa-dribbble"></i></a>
                  </div>   
              </div>
     </div>
