@@ -56,8 +56,8 @@ function sendEmail() {
       const body = `${message}\n\n--\n${name}\n${email}`;
       const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}&from=${encodeURIComponent(email)}`;
       window.open(mailtoLink, '_blank');
-      alert('Email sent!');
       contactForm.reset();
+      alert('Email sent!');
     }
   });
 });
