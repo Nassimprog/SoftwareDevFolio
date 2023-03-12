@@ -45,4 +45,6 @@ function sendEmail() {
   const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}&from=${encodeURIComponent(email)}`;
 
   window.open(mailtoLink, '_blank');
+
+  alert("Email sent!");
 }
