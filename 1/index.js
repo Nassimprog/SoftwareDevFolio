@@ -42,7 +42,7 @@ function sendEmail() {
   const subject = `New message from ${name}`;
   const body = `${message}\n\n--\n${name}\n${email}`;
 
-  const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}&from=${encodeURIComponent(fromEmail)}`;
+  const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}&from=${encodeURIComponent(email)}`;
 
   window.open(mailtoLink, '_blank');
 }
