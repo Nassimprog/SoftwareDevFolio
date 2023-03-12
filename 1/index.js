@@ -34,26 +34,34 @@ setTimeout(function(){
 
 
 function sendEmail() {
-  const toEmail = 'nassim_work@yahoo.com';
-  const name = document.querySelector('input[name="name"]').value;
-  const email = document.querySelector('input[name="email"]').value;
-  const message = document.querySelector('textarea[name="message"]').value;
+  const contactForm = document.querySelector('#contactForm');
+  const sendButton = document.querySelector('.btn_send');
 
-  const subject = `New message from ${name}`;
-  const body = `${message}\n\n--\n${name}\n${email}`;
+  sendButton.addEventListener('click', function() {
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.querySelector('input[name="name"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const message = document.querySelector('textarea[name="message"]').value;
+    
+    if (name === '') {
+      alert('Please enter your name.');
+    } else if (email === '') {
+      alert('Please enter your email.');
+    } else if (message === '') {
+      alert('Please enter your message.');
+    } else {
+      const toEmail = 'nassim_work@yahoo.com';
+      const subject = `New message from ${name}`;
+      const body = `${message}\n\n--\n${name}\n${email}`;
+      const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}&from=${encodeURIComponent(email)}`;
+      window.open(mailtoLink, '_blank');
+      alert('Email sent!');
+      contactForm.reset();
+    }
+  });
+});
 
-  const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}&from=${encodeURIComponent(email)}`;
-
-  window.open(mailtoLink, '_blank');
-  alert("Email sent!");
-  
-  try {
-    window.open(mailtoLink, '_blank');
-    console.log('Email sent successfully!');
-  } catch (err) {
-    console.error('Error sending email:', err);
-  }
-  
 }
 
   
