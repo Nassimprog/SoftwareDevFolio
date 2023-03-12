@@ -31,3 +31,18 @@ setTimeout(function(){
       $("#loading").css("display","none");
     },800);
 },1450);
+
+
+function sendEmail() {
+  const toEmail = 'nassim_work@yahoo.com';
+  const name = document.querySelector('input[name="name"]').value;
+  const email = document.querySelector('input[name="email"]').value;
+  const message = document.querySelector('textarea[name="message"]').value;
+
+  const subject = `New message from ${name}`;
+  const body = `${message}\n\n--\n${name}\n${email}`;
+
+  const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}&from=${encodeURIComponent(fromEmail)}`;
+
+  window.open(mailtoLink, '_blank');
+}
