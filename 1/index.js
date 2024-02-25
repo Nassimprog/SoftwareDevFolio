@@ -35,22 +35,21 @@ setTimeout(function(){
 
 function sendEmail() {
   const contactForm = document.querySelector('#contactForm');
-  const sendButton = document.querySelector('.btn_send');
-
-  sendButton.addEventListener('click', function() {
-  contactForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const name = document.querySelector('input[name="name"]').value;
-    const email = document.querySelector('input[name="email"]').value;
-    const message = document.querySelector('textarea[name="message"]').value;
-    
-    if (name === '') {
+  const nameInput = document.querySelector('input[name="name"]');
+  const emailInput = document.querySelector('input[name="email"]');
+  const messageInput = document.querySelector('textarea[name="message"]');
+  
+  const name = nameInput.value;
+  const email = emailInput.value;
+  const message = messageInput.value;
+  
+  if (name === '') {
       alert('Please enter your name.');
-    } else if (email === '') {
+  } else if (email === '') {
       alert('Please enter your email.');
-    } else if (message === '') {
+  } else if (message === '') {
       alert('Please enter your message.');
-    } else {
+  } else {
       const toEmail = 'nassim_work@yahoo.com';
       const subject = `New message from ${name}`;
       const body = `${message}\n\n--\n${name}\n${email}`;
@@ -58,10 +57,7 @@ function sendEmail() {
       window.open(mailtoLink, '_blank');
       contactForm.reset();
       alert('Email sent!');
-    }
-  });
-});
-
+  }
 }
 
   
