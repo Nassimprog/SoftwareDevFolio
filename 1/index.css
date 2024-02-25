@@ -299,6 +299,16 @@ body,html {
 button:focus {
     outline:none;
 }
+
+p {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
 ::-webkit-scrollbar {
     width:5px;
     height:5px;
