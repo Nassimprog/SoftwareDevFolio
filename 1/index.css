@@ -4,7 +4,7 @@ body,html {
     font-family: 'Comfortaa', cursive;
     font-weight:bold;
     color:#fff;
-    background:rgb(0, 0, 0);
+    background:black;
     scroll-behavior: smooth;
 }
 
@@ -20,13 +20,14 @@ body,html {
 }
 
 .textbox {
-    color: #333333;
-    text-align: justify;
+    color: #fff;
+    margin: auto;
+    text-align: center;
     font-family: 'Comfortaa', cursive;
     font-size: 18px;
     width: 60%;
     max-width: 800px;
-    background-color: #fff;
+    background-color: black;
     border: 1px solid #d2d431;
     border-radius: 8px;
     padding: 20px;
@@ -35,7 +36,7 @@ body,html {
 
   .text-seperator
 {
-  height: 1px;
+  height: 2px;
   border-bottom: 2px solid #303030;
   width: 80%;
   margin: auto;
