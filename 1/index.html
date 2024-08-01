@@ -137,9 +137,9 @@
             <div id="contact">
                 <h1>Contact.</h1> 
                 <form id="contactForm">
-                    <input type="text" name="name" placeholder="name" required>
-                    <input type="email" name="email" placeholder="email" required><br>
-                    <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                    <input type="text" name="name" placeholder="name" required aria-label="Insert your name for the contact form here.">
+                    <input type="email" name="email" placeholder="email" required aria-label="Insert your email for the contact form here."><br>
+                    <textarea name="message" placeholder="your message" required rows="5" aria-label="Insert your message for the contact form here."></textarea><br>
                     
                     <button class="btn_send" type="button" onclick="sendEmail()">send</button>
                 </form> 
