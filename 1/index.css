@@ -19,6 +19,28 @@ body,html {
     transition: top 0.3s;
 }
 
+.textbox {
+    color: #333333;
+    text-align: justify;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    width: 60%;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #d2d431;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-seperator
+{
+  height: 1px;
+  border-bottom: 2px solid #303030;
+  width: 80%;
+  margin: auto;
+}
+
 .skip-to-content:focus {
     top: 0;
 }

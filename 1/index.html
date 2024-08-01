@@ -15,11 +15,11 @@
     <div id="loading">
         <div id="spinner"></div>
     </div>
-    <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+    <div id="header" class="animated slideInDown" style="animation-delay:0.2s;">
     <div id="title">Nassim Rhaiem</div><br>
     <div id="links">
         <a href="#main-content" class="skip-to-content">Skip to main content</a>
-        <a href="#works" style="margin:0px 60px;">Works</a>
+        <a href="#works" >Works</a>
         <a href="#projects">Projects</a>
         <a href="#references">References</a>
         <a href="#contact">Contact</a>
@@ -36,115 +36,188 @@
     </div>
     </center>
 
-    
-    <div id="Intro">
-        <div id="AboutMe">
-            <div id="main-content">
-                <h1>About Me</h1>   
-                <div>
-                    <p>
-                        Hi! I'm Nassim, a graduate software developer with 6 months of professional experience working with Microsoft Dynamics 365 and building CRM systems. In 2022 I graduated with a First in computer science at Coventry University, I value creativity and innovation and strive to apply these to anything I do. I take work as an opportunity to share a passion that originated from gaming. I have experience in collaborating in groups as part of a team inside and out of the professional setting as I work to develop games as a hobby that I value as a skill and a source of entertainment. I am always working in a shifting environment that contains new and unfamiliar challenges which present opportunities to learn from my peers to improve myself with preparations for any task at hand.
-                    </p>
-                </div>
-            </div>
-            <div id="Background">
-                <h1>Background</h1>
-                <div>
-                    <p>
-                        My interest in software development began during my time at university where I was exposed to a wide range of languages and technologies, including C#, Java, JavaScript, and Python. I was particularly drawn to the problem-solving aspect of computer science and the ability to create something out of nothing.
-                    </p>
-                </div> 
-            </div>
-        </div>
-
-              <div id="works">
-                 <h1>Works.</h1>
-
-                 <div class="project">
-                 <h2>Investigating the impact of latency in NFC relay attacks using Arduino's</h2>
-                 <div>
-                    <p>
-                        A relay attack was emulated using three Arduino UNO's: Imagine a scenario where you had your bank card at the back of your phone and in this scenario, your phone was infected with a virus that could read the card since it is in close proximity, the hacker could utilise that virus to act as a mole to relay the NFC interaction between a reader and the card itself. one Arduino would act as a reader, where two other Arduino's would act as a mole that reads an NFC card with information on it and a proxy that sends the request to the mole, recieves the response and sends it to the reader. The Arduino's communicated using Serial.py and were all connected to a laptop and the reader would recieve the connection, verify the information and return the time taken to finish this process. This time was compared with a legitimate interaction between the nfc card and the reader and it was discovered that there was a consistent, significant (as defined as over 500ms) increase in latency when a relay attack is attempted, with an increase in latency of at least 1022ms.
-                    </p>
-                </div>
-                 <button class="btn_one" onclick= "window.location.href='https://github.com/Nassimprog/Arduino-Relay-Project'">visit project</button>
-                </div>
-                
-                <div id="projects">
-                <h1>Projects</h1>
-                <div class="projects">
-                    <h2>Morello's Mediocre night of Marvels</h2>
+    <div class="textbox">
+        <div id="Intro">
+            <div id="AboutMe">
+                <div id="main-content">
+                    <h1>About Me</h1> 
+                    <br>
+                    <div class="text-seperator"></div>
+                    <br>
+                    <br>  
                     <div>
-                       <p>
-                            Participating in the global games jam 2024 with a team of developers, artists and designers from across the world including different states in USA, Italy, Puerto Rico and across the UK. Following the theme of "Make me laugh" presents: Morello's Mediocre night of Marvels, an ambitious platformer that requires finding depressed jesters and making them laugh, going through gags like the falling anvil to squish down to compact areas. I was a lot more experienced in Unity and programming concepts as well as handling version control to ensure a minimum viable product was achieved before the deadline of one week was due. I was able to assist my peers when roadblockers occured and was able to ascertain my own limitations when it came to developing the scope of this project.
-                    </p>
-                    <iframe height="167" frameborder="0" src="https://itch.io/embed/2499019" width="552"><a href="https://wobbix.itch.io/morello">Morello&#039;s Mediocre Night of Marvels by Wobbix</a></iframe>
-                    </div>
-                    <button class="btn_one" onclick= "window.location.href='https://github.com/Nassimprog/Chadbot'">visit project</button>
-                   </div>
-
-                <div class="projects">
-                 <h2>Ruby's Adventure</h2>
-                 <div>
-                    <p>
-                        Ruby's Adventure was my first experience using a game engine: Unity. Ruby's adventure is a Unity-provided tutorial on how to begin to design a small 2D game using sprites, animations and Object Oriented Programming with C#. I took this one step further, assigning different variations of NPCs, taking advantage of Unity's prefab system to create variations of enemies and characters that can do unique things such as changing dialogue when conditions are met and chaning movement patterns. Ruby must fix all of the robots in her village but perhaps someone else is pulling the strings. The game is available to play on Github and is the first major project I had taken outside of university.
-                    </p>
-                    <iframe src="https://giphy.com/embed/57TY5X5HgQ7jN50qUM" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen aria-label="Gameplay of a Character: Ruby, exploring the area, interacting with the environment by talking to people, breaking boxes and picking up items. In this Unity-made game."></iframe>
-                 </div>
-                 <button class="btn_one" onclick= "window.location.href='https://github.com/Nassimprog/NassaFirstGameUnity'">visit project</button>
-                </div>
-
-                <div class="projects">
-                    <h2>Pace Maker: The Fitness App</h2>
-                    <div>
-                       <p>
-                            Designing a fitness app from the ground up, utilising cloud computing to enhance the user experience with the Firebase API to store user login information securely. This app also uses mobile sensors such as the accelerometer to detect and count footsteps, to approximate burned calories for the sole purpose of aiding a healthier lifestyle in a clear, accessible interface, such features include using the MVVM model, Inversion of Control and tabbed pages for the UI.
+                        <p>
+                            Hi! I'm Nassim, a graduate software developer with over one year of professional experience working with Microsoft Dynamics 365 and building CRM systems. In 2022 I graduated with a First in computer science at Coventry University, I value creativity and innovation and strive to apply these to anything I do. I take work as an opportunity to share a passion that originated from gaming. I have experience in collaborating in groups as part of a team inside and out of the professional setting as I work to develop games as a hobby that I value as a skill and a source of entertainment. I am always working in a shifting environment that contains new and unfamiliar challenges which present opportunities to learn from my peers to improve myself with preparations for any task at hand.
                         </p>
                     </div>
-                    <button class="btn_one" onclick= "window.location.href='https://github.com/Nassimprog/FitnessApp'">visit project</button>
-                   </div>
-
-                <div class="projects">
-                    <h2>ChadBot, the Discord chef ChatBot</h2>
-                    <div>
-                       <p>
-                            Inspired by a friend and chef: Chad, a chatbot was developed using Discord's API and Edamam's recipe API that can recall any recipe in its database when asked for a recipe containing a key word, alternatively, random recipes can be selected and the nutritional values of the recipes can be indexed and provided, which is acheived using event callbacks. This was the first University project that I had done and was priveledged to work on this with others who also made significant contributions and this project introduced me to version control and programming in a team.
-                    </p>
-                    </div>
-                    <button class="btn_one" onclick= "window.location.href='https://github.com/Nassimprog/Chadbot'">visit project</button>
-                   </div>
-
-                <div class="projects">
-                    <h2>Weather Prediction using AI</h2>
-                    <div>
-                       <p>
-                            Using a dataset that provides information of the weather in Australia from Kaggle, the data was preprocessed via scrubbing of irrelevant and incomplete data, Encoded using OneHotEncoder to assign value to strings such as weather types which are non numerical. The model was trained and compared to a scaled size of the dataset, the more optimal of the two was chosen. Logistic Regression and K Nearest Neighbour (KNN) was used to predict if it would rain today. The models produced high levels of accuracy each, and were tuned to further increase predictibility using grid search and randomized search to find the optimal hyperparameters for Logistic regression and the optimal number of neighbors for KNN. Confusion matrices and cross validation were performed to analyse the accuracy and precision of the training models. In conclusion: Both models succeed in classifying if there will be rain tommorow. The Logistic regression model was the better model with a perfect accuracy when tuned. KNN was had high accuracies of 89% (when tuned)
-                    </p>
-                    </div>
-                    <button class="btn_one" onclick= "window.location.href='https://github.com/Nassimprog/Weather-Prediction-Using-AI'">visit project</button>
-                   </div>
                 </div>
-
             </div>
-             <div id="references">
-                <h1>References</h1>   
-                <div>
-                       <p>
-                           Available on request.
-                       </p>
-                </div> 
-            </div>
-            <div id="contact">
-                <h1>Contact.</h1> 
-                <form id="contactForm">
-                    <input type="text" name="name" placeholder="name" required aria-label="Insert your name for the contact form here.">
-                    <input type="email" name="email" placeholder="email" required aria-label="Insert your email for the contact form here."><br>
-                    <textarea name="message" placeholder="your message" required rows="5" aria-label="Insert your message for the contact form here."></textarea><br>
-                    
-                    <button class="btn_send" type="button" onclick="sendEmail()">send</button>
-                </form> 
-            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="text-seperator"></div>
+        <br>
+        <br>
+        <div id="Background">
+            <h1>Background</h1>
+            <br>
+            <div class="text-seperator"></div>
+            <br>
+            <br>
+            <div>
+                <p>
+                    My interest in software development began during my time at university where I was exposed to a wide range of languages and technologies, including C#, Java, JavaScript, and Python. I was particularly drawn to the problem-solving aspect of computer science and the ability to create something out of nothing.
+                </p>
+            </div> 
+        </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <div class="text-seperator"></div>
+    <br>
+    <br>
+    <div class="textbox">
+        <div id="works">
+            <h1>Works</h1>
+            <br>
+            <div class="text-seperator"></div>
+            <br>
+            <br>
+            <div class="project">
+                <h2>Investigating the impact of latency in NFC relay attacks using Arduino's</h2>
+                <div>
+                    <p>
+                    A relay attack was emulated using three Arduino UNO's: Imagine a scenario where you had your bank card at the back of your phone and in this scenario, your phone was infected with a virus that could read the card since it is in close proximity, the hacker could utilise that virus to act as a mole to relay the NFC interaction between a reader and the card itself. one Arduino would act as a reader, where two other Arduino's would act as a mole that reads an NFC card with information on it and a proxy that sends the request to the mole, recieves the response and sends it to the reader. The Arduino's communicated using Serial.py and were all connected to a laptop and the reader would recieve the connection, verify the information and return the time taken to finish this process. This time was compared with a legitimate interaction between the nfc card and the reader and it was discovered that there was a consistent, significant (as defined as over 500ms) increase in latency when a relay attack is attempted, with an increase in latency of at least 1022ms.
+                    </p>
+                </div>
+                <button class="btn_one" onclick= "window.location.href='https://github.com/Nassimprog/Arduino-Relay-Project'">visit project</button>
+            </div>
+        </div>
+    </div>
+    <div class="textbox">
+        <div id="projects">
+            <h1>Projects</h1>
+            <br>
+            <div class="text-seperator"></div>
+            <br>
+            <br>
+            <div class="projects">
+                <h2>Morello's Mediocre night of Marvels</h2>
+                <div>
+                    <p>
+                    Participating in the global games jam 2024 with a team of developers, artists and designers from across the world including different states in USA, Italy, Puerto Rico and across the UK. Following the theme of "Make me laugh" presents: Morello's Mediocre night of Marvels, an ambitious platformer that requires finding depressed jesters and making them laugh, going through gags like the falling anvil to squish down to compact areas. I was a lot more experienced in Unity and programming concepts as well as handling version control to ensure a minimum viable product was achieved before the deadline of one week was due. I was able to assist my peers when roadblockers occured and was able to ascertain my own limitations when it came to developing the scope of this project.
+                    </p>
+                    <iframe height="167" frameborder="0" src="https://itch.io/embed/2499019" width="552"><a href="https://wobbix.itch.io/morello">Morello&#039;s Mediocre Night of Marvels by Wobbix</a></iframe>
+                </div>
+                <button class="btn_one" onclick= "window.location.href='https://github.com/Nassimprog/Chadbot'">visit project</button>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <div class="text-seperator"></div>
+            <br>
+            <br>
+
+            <div class="projects">
+                <h2>Ruby's Adventure</h2>
+                <div>
+                    <p>
+                    Ruby's Adventure was my first experience using a game engine: Unity. Ruby's adventure is a Unity-provided tutorial on how to begin to design a small 2D game using sprites, animations and Object Oriented Programming with C#. I took this one step further, assigning different variations of NPCs, taking advantage of Unity's prefab system to create variations of enemies and characters that can do unique things such as changing dialogue when conditions are met and chaning movement patterns. Ruby must fix all of the robots in her village but perhaps someone else is pulling the strings. The game is available to play on Github and is the first major project I had taken outside of university.
+                    </p>
+                    <iframe src="https://giphy.com/embed/57TY5X5HgQ7jN50qUM" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen aria-label="Gameplay of a Character: Ruby, exploring the area, interacting with the environment by talking to people, breaking boxes and picking up items. In this Unity-made game."></iframe>
+                </div>
+                <button class="btn_one" onclick= "window.location.href='https://github.com/Nassimprog/NassaFirstGameUnity'">visit project</button>
+            </div>
+            
+            <br>
+            <br>
+            <br>
+            <div class="text-seperator"></div>
+            <br>
+            <br>
+
+            <div class="projects">
+                <h2>Pace Maker: The Fitness App</h2>
+                <div>
+                    <p>
+                        Designing a fitness app from the ground up, utilising cloud computing to enhance the user experience with the Firebase API to store user login information securely. This app also uses mobile sensors such as the accelerometer to detect and count footsteps, to approximate burned calories for the sole purpose of aiding a healthier lifestyle in a clear, accessible interface, such features include using the MVVM model, Inversion of Control and tabbed pages for the UI.
+                    </p>
+                </div>
+                <button class="btn_one" onclick= "window.location.href='https://github.com/Nassimprog/FitnessApp'">visit project</button>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <div class="text-seperator"></div>
+            <br>
+            <br>
+
+            <div class="projects">
+                <h2>ChadBot, the Discord chef ChatBot</h2>
+                <div>
+                    <p>
+                    Inspired by a friend and chef: Chad, a chatbot was developed using Discord's API and Edamam's recipe API that can recall any recipe in its database when asked for a recipe containing a key word, alternatively, random recipes can be selected and the nutritional values of the recipes can be indexed and provided, which is acheived using event callbacks. This was the first University project that I had done and was priveledged to work on this with others who also made significant contributions and this project introduced me to version control and programming in a team.
+                    </p>
+                </div>
+                <button class="btn_one" onclick= "window.location.href='https://github.com/Nassimprog/Chadbot'">visit project</button>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <div class="text-seperator"></div>
+            <br>
+            <br>
+
+            <div class="projects">
+                <h2>Weather Prediction using AI</h2>
+                <div>
+                    <p>
+                    Using a dataset that provides information of the weather in Australia from Kaggle, the data was preprocessed via scrubbing of irrelevant and incomplete data, Encoded using OneHotEncoder to assign value to strings such as weather types which are non numerical. The model was trained and compared to a scaled size of the dataset, the more optimal of the two was chosen. Logistic Regression and K Nearest Neighbour (KNN) was used to predict if it would rain today. The models produced high levels of accuracy each, and were tuned to further increase predictibility using grid search and randomized search to find the optimal hyperparameters for Logistic regression and the optimal number of neighbors for KNN. Confusion matrices and cross validation were performed to analyse the accuracy and precision of the training models. In conclusion: Both models succeed in classifying if there will be rain tommorow. The Logistic regression model was the better model with a perfect accuracy when tuned. KNN was had high accuracies of 89% (when tuned)
+                    </p>
+                </div>
+                <button class="btn_one" onclick= "window.location.href='https://github.com/Nassimprog/Weather-Prediction-Using-AI'">visit project</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="textbox">
+        <div id="references">
+            <h1>References</h1>
+
+            <br>
+            <div class="text-seperator"></div>
+            <br>
+            <br>
+            
+            <div>
+                <p>
+                Available on request.
+                </p>
+            </div> 
+        </div>
+        <div id="contact">
+            <h1>Contact.</h1>
+
+            <br>
+            <div class="text-seperator"></div>
+            <br>
+            <br>  
+
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="name" required aria-label="Insert your name for the contact form here.">
+                <input type="email" name="email" placeholder="email" required aria-label="Insert your email for the contact form here."><br>
+                <textarea name="message" placeholder="your message" required rows="5" aria-label="Insert your message for the contact form here."></textarea><br>
+                
+                <button class="btn_send" type="button" onclick="sendEmail()">send</button>
+            </form> 
+        </div>
+    </div>
+    
    
 <script src="index.js" type="text/javascript"></script>
 </body>
