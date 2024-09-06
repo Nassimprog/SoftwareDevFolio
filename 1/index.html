@@ -83,6 +83,8 @@
                     <p>
                     A relay attack was emulated using three Arduino UNO's: Imagine a scenario where you had your bank card at the back of your phone and in this scenario, your phone was infected with a virus that could read the card since it is in close proximity, the hacker could utilise that virus to act as a mole to relay the NFC interaction between a reader and the card itself. one Arduino would act as a reader, where two other Arduino's would act as a mole that reads an NFC card with information on it and a proxy that sends the request to the mole, recieves the response and sends it to the reader. The Arduino's communicated using Serial.py and were all connected to a laptop and the reader would recieve the connection, verify the information and return the time taken to finish this process. This time was compared with a legitimate interaction between the nfc card and the reader and it was discovered that there was a consistent, significant (as defined as over 500ms) increase in latency when a relay attack is attempted, with an increase in latency of at least 1022ms.
                     </p>
+                    <br>
+                    <img src="Media/NFCCARD.png" alt="Output of the Arduino saying it has found a match, detecting a relayed signal and displaying the UID of the original card" />
                 </div>
                 <button class="btn_one" onclick= "window.location.href='https://github.com/Nassimprog/Arduino-Relay-Project'">visit project</button>
             </div>
@@ -156,6 +158,8 @@
                     <p>
                     Inspired by a friend and chef: Chad, a chatbot was developed using Discord's API and Edamam's recipe API that can recall any recipe in its database when asked for a recipe containing a key word, alternatively, random recipes can be selected and the nutritional values of the recipes can be indexed and provided, which is acheived using event callbacks. This was the first University project that I had done and was priveledged to work on this with others who also made significant contributions and this project introduced me to version control and programming in a team.
                     </p>
+                    <br>
+                    <img src="Media/ChadBot.png" alt="Output of the Arduino saying it has found a match, detecting a relayed signal and displaying the UID of the original card" />
                 </div>
                 <button class="btn_one" onclick= "window.location.href='https://github.com/Nassimprog/Chadbot'">visit project</button>
             </div>
