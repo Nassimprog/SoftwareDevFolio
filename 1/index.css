@@ -111,7 +111,7 @@ body,html {
 #middle {
     width:100%;
     height:80vh;
-    background:linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0)),url("https://c4.wallpaperflare.com/wallpaper/414/126/559/5bd334f8d938f-wallpaper-preview.jpg") center center fixed;
+    background:linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0)),url("./media/background.jpg") center center fixed;
     background-size:100% auto;
     background-repeat:no-repeat;
     color:white;
